@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   {% include "blog/partials/_head.html" %}
 </head>
+
 <body>
+  <h1>{{ site_setup.title }}</h1>
+  <h1>{{ site_setup.description }}</h1>
+  <h1>{{ example }}</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae, eius voluptas sint dicta voluptatem praesentium
+    perspiciatis aliquam dolor accusantium vitae! Amet sit nihil dicta a animi voluptate cum autem.</p>
+
   {% include "blog/partials/_header.html" %}
-  
+
   {% block content %}{% endblock content %}
 
   {% include "blog/partials/_pagination.html" %}
 
   {% include "blog/partials/_footer.html" %}
 
+  {% include "blog/partials/_temp.html" %}
+
 </body>
+
 </html>

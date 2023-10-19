@@ -1,3 +1,4 @@
+# flake8: noqa
 """
 Django settings for project project.
 
@@ -68,6 +69,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'site_setup.context_processors.context_process_exemple',
+                'site_setup.context_processors.site_setup',
             ],
         },
     },

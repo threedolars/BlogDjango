@@ -1,8 +1,9 @@
 :root {
     --clr-dark_puple: 295, 95%, 7%;
-    --clr-claret-dark-red: 336, 80%, 18.8%;
-    --clr-celedon-midlight-green: 140, 39%, 79%;
-    --clr-mint-green-light-green: 162, 71%, 92%;
+    --clr-claret-dark-red: 336, 80%, 70%;
+    --clr-celedon-midlight-green: 140, 39%, 84%;
+    --clr-celedon-midlight-green-dark: 140, 39%, 72%;
+    --clr-mint-green-light-green: 162, 71%, 90%;
     --clr-baby-powder-white: 120, 14%, 96%;
 
     --clr-base: 213 100%;
@@ -46,6 +47,8 @@
     --lh-mono: 1.2;
 
     /* Spacings */
+    --spacing-hyper-smlst: 0.35rem;
+    --spacing-super-smlst: 1rem;
     --spacing-smlst: 1.5rem;
     --spacing-smlr: 2rem;
     --spacing-sm: 2.5rem;
@@ -82,4 +85,118 @@ a {
 a:hover {
     color: var(--clr-primary-dk);
     text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    margin: var(--spacing-base);
+    line-height: var(--lh-headings);
+
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+h5 {
+    font-size: var(--fs-h5);
+}
+
+h6 {
+    font-size: var(--fs-h6);
+}
+
+.header {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.Neshay {
+    background-color: hsl(var(--clr-mint-green-light-green));
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+}
+
+.Neshay-Logotype {
+    display: flex;
+    align-items: center;
+}
+
+.Neshay-Title {
+    flex: 2;
+}
+
+.Neshay-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10%;
+    margin: var(--spacing-base);
+}
+
+.login-btn {
+    background-color: hsl(var(--clr-celedon-midlight-green));
+    color: hsl(var(--clr-claret-dark-red));
+    padding: var(--spacing-smlst);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para quando o mouse passa sobre o botão */
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.Neshay-Page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Neshay-Page-Card {
+    display: flex;
+    background-color: hsl(var(--clr-celedon-midlight-green-dark));
+    margin: var(--spacing-base);
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    border-radius: 5px;
+}
+
+.Neshay-Page-Publications {
+    background-color: hsl(var(--clr-celedon-midlight-green));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: var(--spacing-hyper-smlst);
+    width: 62rem;
+    border-radius: 5px;
+}
+
+.Neshay-Page-Publications-Paragraphy {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    height: 70%;
 }

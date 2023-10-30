@@ -1,11 +1,37 @@
+{% load static %}
 <div class="Neshay header">
     <div class="Neshay-Logotype">
     </div>
     <div class="Neshay-Title">
-        <h2>Neshay</h2>
+        <h3>Neshay</h3>
+    </div>
+    <div class="Neshay-Search-Symbol">
+        <img src="{% static "blog/img/search.svg" %}" alt="">
+    </div>
+    <div class="Neshay-Search">
+        <input type="text" placeholder="Search" class="Search-bar">
+    </div>
+    <div class="Neshay-Top-icon">
+        <input type="image" src="{% static "blog/img/fire.svg" %}" class="Neshay-Top-Fire-Icon">
+        <!-- <img src="{% static " blog/img/fire.svg" %}" alt="" class="Neshay-Top-Fire-Icon"> -->
+    </div>
+    <div class="Neshay-Home-Icon">
+        <input type="image" src="{% static "blog/img/home.svg" %}" class="Neshay-Home-House-Icon">
+    </div>
+    <div class="Neshay-Notification-Icon">
+        <input type="image" src="{% static "blog/img/notification.svg" %}" class="Neshay-Notification-Bell-Icon">
     </div>
     <div class="Neshay-buttons">
-        <input type="button" value="Login" class="login-btn">
-        <input type="button" value="sign" class="sign-btn">
+        <input type="button" value="Login" class="Login-btn">
+        <input type="button" value="sign" class="Sign-btn">
+    </div>
+    <div class="Neshay-Dark-Mode-icon">
+        <img src="{% static "blog/img/dark-mode.svg" %}" alt="">
+    </div>
+    <div class="Neshay-User-Card">
+        <div class="Neshay-User-Card-Profile-Photo">
+        </div>
+        <div class="Neshay-User-Card-User-Name">
+        </div>
     </div>
 </div>

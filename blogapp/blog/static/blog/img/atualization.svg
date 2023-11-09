@@ -1,0 +1,26 @@
+<svg viewBox="-2.16 -2.16 28.32 28.32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" fill="" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)" stroke="">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+        <title></title>
+        <g fill="none" fill-rule="evenodd" id="页面-1" stroke-width="0.9600000000000002">
+            <g id="导航图标" transform="translate(-100.000000, -80.000000)">
+                <g id="编组" transform="translate(100.000000, 80.000000)">
+                    <rect fill="#FFFFFF" fill-opacity="0.01" fill-rule="nonzero" height="24" id="矩形" width="24" x="0"
+                        y="0"></rect>
+                    <path
+                        d="M2.5,3.5 C2.5,2.671575 3.171575,2 4,2 L16,2 C16.82845,2 17.5,2.671575 17.5,3.5 L17.5,22 L4,22 C3.171575,22 2.5,21.32845 2.5,20.5 L2.5,3.5 Z"
+                        id="路径" stroke="#ea3e83" stroke-linejoin="round" stroke-width="0.9600000000000002"></path>
+                    <path
+                        d="M17.5,12 C17.5,11.4477 17.9477,11 18.5,11 L20.5,11 C21.0523,11 21.5,11.4477 21.5,12 L21.5,20.5 C21.5,21.32845 20.82845,22 20,22 L17.5,22 L17.5,12 Z"
+                        id="路径" stroke="#ea3e83" stroke-linejoin="round" stroke-width="0.9600000000000002"></path>
+                    <line id="路径" stroke="#ea3e83" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0.9600000000000002" x1="5.5" x2="9.5" y1="6" y2="6"></line>
+                    <line id="路径" stroke="#ea3e83" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0.9600000000000002" x1="5.5" x2="11.5" y1="9.5" y2="9.5"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

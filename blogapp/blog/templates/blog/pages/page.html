@@ -1,35 +1,117 @@
 {% extends "blog/base.html" %}
+{% load static %}
 
 {% block content %}
-<div class="Neshay-Page">
-    <h1>PAGE!!!</h1>
-    <div class="Neshay-Page-Card">
-        <div class="Neshay-Page-Publications">
-            <h2>Lorem</h2>
-            <div class="Neshay-Page-Publications-Paragraphy">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
-                    perspiciatis
-                    alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
-                    perspiciatis
-                    alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
-                </p>
+<aside class="Neshay header">
+    <div class="Neshay-Logotype">
+    </div>
+    <div class="Neshay-Title">
+        <input type="image" src="{% static "blog/img/Neshay-ff3.png" %}" class="Neshay-Create-Post-Icon">
+    </div>
+    <div class="Neshay-Search-Symbol">
+        <img src="{% static "blog/img/search.svg" %}" alt="">
+    </div>
+    <div class="Neshay-Search">
+        <input type="text" placeholder="Search" class="Search-bar">
+    </div>
+    <div class="Neshay-Create-icon">
+        <input type="image" src="{% static "blog/img/pen.svg" %}" class="Neshay-Create-Post-Icon">
+    </div>
+    <div class="Neshay-Top-icon">
+        <input type="image" src="{% static "blog/img/fire.svg" %}" class="Neshay-Top-Fire-Icon">
+    </div>
+    <div class="Neshay-Home-Icon">
+        <input type="image" src="{% static "blog/img/home.svg" %}" class="Neshay-Home-House-Icon">
+    </div>
+    <div class="Neshay-Notification-Icon">
+        <input type="image" src="{% static "blog/img/notification.svg" %}" class="Neshay-Notification-Bell-Icon">
+    </div>
+    <div class="Neshay-Conversation-Icon">
+        <input type="image" src="{% static "blog/img/conversation.svg" %}" class="Neshay-Conversation-Dialog-Icon">
+    </div>
+    <div class="Neshay-Actualization-Icon">
+        <input type="image" src="{% static "blog/img/atualization.svg" %}" class="Neshay-Actualization-Notes-Icon">
+    </div>
+    <div class="Neshay-buttons">
+        <input type="button" value="Login" class="Login-btn">
+        <input type="button" value="sign" class="Sign-btn">
+    </div>
+    <div class="Neshay-User-Card">
+        <div class="Neshay-User-Card-Profile-Photo">
+        </div>
+        <div class="Neshay-User-Card-User-Name">
+            <p>Username</p>
+        </div>
+    </div>
+</aside>
+<div class="Neshay-Spacing">
+    
+</div>
+
+<div class="Neshay-Advertisement-Box">
+    <div class="Neshay-Advertisement">
+        <div class="Neshay-Advertisement-Back">
+            <input type="image" src="{% static "blog/img/back_ad.svg" %}" class="Neshay-Advertisement-Back-Btn">
+        </div>
+        <div class="Neshay-Advertisement-Next">
+            <input type="image" src="{% static "blog/img/next_ad.svg" %}" class="Neshay-Advertisement-Next-Btn">
+        </div>
+    </div>
+</div>
+
+<div class="Neshay-Spacing">
+    
+</div>
+
+<div class="Neshay-Main">
+    <div class="Neshay-Explore">
+
+    </div>
+    <div class="Neshay-Posts">
+        <div class="Neshay-Posts-Card">
+            <div class="Neshay-Posts-Publications">
+                <h2>Lorem</h2>
+                <div class="Neshay-Posts-Publications-Paragraphy">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
+                        perspiciatis
+                        alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
+                        perspiciatis
+                        alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
+                        perspiciatis
+                        alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
+                        perspiciatis
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Neshay-Posts-Card">
+            <div class="Neshay-Posts-Publications">
+                <h2>Lorem</h2>
+                <div class="Neshay-Posts-Publications-Paragraphy">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
+                        perspiciatis
+                        alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
+                        perspiciatis
+                        alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="Neshay-Page-Card">
-        <div class="Neshay-Page-Publications">
-            <h2>Lorem</h2>
-            <div class="Neshay-Page-Publications-Paragraphy">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
-                    perspiciatis
-                    alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequuntur dolor et accusantium
-                    perspiciatis
-                    alias quis est facilis aperiam, libero ex quod! Officia ratione fugiat atque. Est cum ex maiores!
-                </p>
-            </div>
-        </div>
+    <div class="Neshay-About">
+        <ul>
+            <li class="Neshay-About-Items">Ajuda</li>
+            <li class="Neshay-About-Items">Relatar Bug</li>
+            <li class="Neshay-About-Items">Contato</li>
+            <li class="Neshay-About-Items">Sobre nós</li>
+            <li class="Neshay-About-Items">Diretrizes</li>
+            <li class="Neshay-About-Items">Licensas e Termos de uso</li>
+            <li class="Neshay-About-Items">Seja um apoiador</li>
+        </ul>
     </div>
 </div>
 {% endblock content %}

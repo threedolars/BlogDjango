@@ -1,0 +1,15 @@
+- Palltet 1: 
+005f73
+0a9396
+94d2bd
+e9d8a6
+ee9b00
+ca6702
+bb3e03
+ae2012
+9b2226
+
+
+- Palltet 2: 590d22 800f2f a4133c c9184a ff4d6d ff758f ff8fa3 ffb3c1 ffccd5 fff0f3 
+- Palltet 3: f8f9fa e9ecef dee2e6 ced4da adb5bd 6c757d 495057 343a40 212529  
+- Palltet 4: 03071e 370617 6a040f 9d0208 d00000 dc2f02 e85d04 f48c06 faa307 ffba08

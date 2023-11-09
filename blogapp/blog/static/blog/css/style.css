@@ -6,6 +6,52 @@
     --clr-mint-green-light-green: 162, 71%, 90%;
     --clr-baby-powder-white: 120, 14%, 96%;
 
+    /* ######### */
+
+    --clr1: #005f73;
+    --clr2: #0a9396;
+    --clr3: #94d2bd;
+    --clr4: #e9d8a6;
+    --clr5: #ee9b00;
+    --clr6: #ca6702;
+    --clr7: #bb3e03;
+    --clr8: #ae2012;
+    --clr9: #9b2226;
+
+    --clr10: #590d22;
+    --clr10: #800f2f;
+    --clr10: #a4133c;
+    --clr10: #c9184a;
+    --clr10: #ff4d6d;
+    --clr10: #ff758f;
+    --clr10: #ff8fa3;
+    --clr10: #ffb3c1;
+    --clr10: #ffccd5;
+    --clr10: #fff0f3;
+
+    --clr21: #f8f9fa;
+    --clr21: #e9ecef;
+    --clr21: #dee2e6;
+    --clr21: #ced4da;
+    --clr21: #adb5bd;
+    --clr21: #6c757d;
+    --clr21: #495057;
+    --clr21: #343a40;
+    --clr21: #212529;
+
+    --clr30: #03071e;
+    --clr30: #370617;
+    --clr30: #6a040f;
+    --clr30: #9d0208;
+    --clr30: #d00000;
+    --clr30: #dc2f02;
+    --clr30: #e85d04;
+    --clr30: #f48c06;
+    --clr30: #faa307;
+    --clr30: #ffba08;
+
+    /* ######### */
+
     --clr-base: 213 100%;
 
     --clr-white: var(--clr-base) 99%;
@@ -20,6 +66,7 @@
     --clr-primary-dkst: var(--clr-base) 20%;
 
     /* Font-family */
+    --ff-roboto: 'Roboto', sans-serif;
     --ff-regular: Georgia, 'Times New Roman', Times, serif;
     --ff-headings: Georgia, 'Times New Roman', Times, serif;
     --ff-mono: 'Courier New', Courier, monospace;
@@ -70,7 +117,7 @@ body {
     background-color: hsl(var(--clr-baby-powder-white));
     color: hsl((var--clr-dark_puple));
     font-size: var(--fs-base);
-    font-family: var(--ff-regular);
+    font-family: var(--ff-roboto);
     line-height: var(--lh-regular);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -132,16 +179,18 @@ h6 {
 }
 
 .Neshay {
-    background-color: hsl(var(--clr-mint-green-light-green));
+    /* background-color: hsl(var(--clr-mint-green-light-green)); */
+    background-color: #fde1e7;
     display: flex;
     align-items: center;
     min-width: 100%;
-    margin: 0rem;
     position: fixed;
-    border-bottom: 1.8px solid hsl(var(--clr-celedon-midlight-green-dark));
+    /* border-bottom: 1.8px solid hsl(var(--clr-celedon-midlight-green-dark)); */
+    border-bottom: 1.8px solid #ffccd5;
     border-right: none;
     border-left: none;
     border-top: none;
+    z-index: 1;
 }
 
 .Neshay-Logotype {
@@ -151,15 +200,17 @@ h6 {
 
 .Neshay-Title {
     /* flex: 2; */
+    margin-top: 1rem;
     margin-left: var(--spacing-base);
     margin-right: var(--spacing-base);
+    align-items: center;
 }
 
 .Neshay-Search-Symbol {
     display: flex;
     align-items: center;
     background-color: hsl(var(--clr-baby-powder-white));
-    height: 3rem;
+    height: 4rem;
     width: 2.4rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 0px;
@@ -173,7 +224,7 @@ h6 {
     align-items: center;
     text-align: center;
     background-color: hsl(var(--clr-baby-powder-white));
-    height: 3rem;
+    height: 4rem;
     border: 0;
     text-decoration: none;
     border-top-left-radius: 0px;
@@ -181,6 +232,22 @@ h6 {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 0px;
     margin-right: var(--spacing-base);
+    font-size: var(--fs-sm);
+}
+
+.Neshay-Create-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--spacing-bgr);
+    height: var(--spacing-bgr);
+    cursor: pointer;
+    transition: all 250ms;
+    border-radius: 3.5px;
+}
+
+.Neshay-Create-icon:hover {
+    background-color: hsl(162, 71%, 83%);
 }
 
 .Neshay-Top-icon {
@@ -191,6 +258,7 @@ h6 {
     height: var(--spacing-bgr);
     transition: all 250ms;
     border-radius: 4px;
+    margin-left: var(--spacing-smlr);
 }
 
 .Neshay-Top-icon:hover {
@@ -240,6 +308,43 @@ h6 {
     border-radius: 3.5px;
     margin-left: var(--spacing-smlr);
 }
+
+.Neshay-Notification-Icon:hover {
+    background-color: hsl(162, 71%, 83%);
+}
+
+.Neshay-Conversation-Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--spacing-bgr);
+    height: var(--spacing-bgr);
+    cursor: pointer;
+    transition: all 250ms;
+    border-radius: 3.5px;
+    margin-left: var(--spacing-smlr);
+}
+
+.Neshay-Conversation-Icon:hover {
+    background-color: hsl(162, 71%, 83%)
+}
+
+.Neshay-Actualization-Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--spacing-bgr);
+    height: var(--spacing-bgr);
+    cursor: pointer;
+    transition: all 250ms;
+    border-radius: 3.5px;
+    margin-left: var(--spacing-smlr);
+}
+
+.Neshay-Actualization-Icon:hover {
+    background-color: hsl(162, 71%, 83%)
+}
+
 
 .Neshay-buttons {
     display: flex;
@@ -327,44 +432,124 @@ h6 {
 }
 
 .Neshay-User-Card-User-Name {
+    display: flexbox;
     background-color: hsl(162, 71%, 74%);
     border-radius: var(--spacing-base);
     width: 10.5rem;
     height: 5rem;
-}
-
-.Neshay-Page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
-.Neshay-Page-Card {
+.Neshay-Spacing {
+    height: 10rem;
+}
+
+.Neshay-Advertisement-Box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--clr-dark_puple));
+    height: 35rem;
+    margin-left: var(--spacing-base);
+    margin-right: var(--spacing-base);
+    border-radius: 5px;
+}
+
+.Neshay-Advertisement {
+    background-color: hsl(var(--clr-claret-dark-red));
+    width: 98.5%;
+    height: 94.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Neshay-Advertisement-Back {
+    margin-left: var(--spacing-smlst);
+    background-color: hsl(var(--clr-baby-powder-white));
+    border-radius: 15px;
+    height: 3rem;
+    width: 3rem;
+}
+
+.Neshay-Advertisement-Next {
+    margin-right: var(--spacing-smlst);
+    background-color: hsl(var(--clr-baby-powder-white));
+    border-radius: 15px;
+    height: 3rem;
+    width: 3rem;
+}
+
+.Neshay-Main {
+    background-color: #fff3f5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Neshay-Explore {
+    background-color: aqua;
+    width: 30rem;
+    height: 35rem;
+    margin-left: var(--spacing-base);
+    margin-right: var(--spacing-base);
+    border-color: hsl(var(--clr-dark_puple));
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.Neshay-Posts {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.Neshay-Posts-Card {
+    width: 70rem;
+    margin-bottom: var(--spacing-base);
+    border-radius: 10px;
+    padding: 0.25rem;
+    align-items: center;
+    /* max-height: 70rem; */
+}
+
+.Neshay-Posts-Publications {
+    background-color: hsl(162, 71%, 90%);
+    text-align: justify;
+    border-radius: 10px;
+    border-color: hsl(var(--clr-claret-dark-red));
+    border-style: solid;
+    padding: 1rem;
+
+}
+
+.Neshay-About {
+    background-color: hsl(var(--clr-mint-green-light-green));
+    height: 27rem;
+    margin-left: var(--spacing-base);
+    margin-right: var(--spacing-base);
+    border-color: hsl(var(--clr-claret-dark-red));
+    border-style: solid;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.Neshay-About-Items {
+    display: flex;
+    font-size: var(--fs-sm);
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.Neshay-About-Items:hover {
     background-color: hsl(var(--clr-celedon-midlight-green-dark));
-    margin: var(--spacing-base);
-    justify-content: center;
-    align-items: center;
-    width: 60rem;
-    border-radius: 5px;
-}
-
-.Neshay-Page-Publications {
-    background-color: hsl(var(--clr-celedon-midlight-green));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: var(--spacing-hyper-smlst);
-    width: 62rem;
-    border-radius: 5px;
-}
-
-.Neshay-Page-Publications-Paragraphy {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 70%;
-    height: 70%;
 }
